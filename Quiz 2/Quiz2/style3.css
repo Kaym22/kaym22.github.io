@@ -1,5 +1,5 @@
 .subbox1{
-    width:400px;
+    width:275px;
     height: 316px;
     border: 3px solid red;box-shadow: 10px 12px 10px red; 
     float: right;
@@ -7,7 +7,7 @@
 }
 
 .subbox2{
-    width:400px;
+    width:275px;
     height: 316px;
     border:3px solid red;box-shadow: 10px 12px 10px yellow;
     border-radius: 20px;
@@ -30,14 +30,3 @@
     height:65px;
     float:left;
     text-align: center;
-    color: white;
-}
-
-.img{
-    display: none
-}
-
-span:hover + .img{
-    display:block;
-}
-
