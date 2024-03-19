@@ -1,0 +1,43 @@
+.subbox1{
+    width:400px;
+    height: 316px;
+    border: 3px solid red;box-shadow: 10px 12px 10px red; 
+    float: right;
+    margin:19.5px 19.5px 1px;
+}
+
+.subbox2{
+    width:400px;
+    height: 316px;
+    border:3px solid red;box-shadow: 10px 12px 10px yellow;
+    border-radius: 20px;
+    float: right;
+    margin:19.5px 19.5px 1px;
+}
+
+.subbox3{
+    background-color: red;
+    width:325px;
+    height:65px;
+    float:left;
+    text-align: center;
+    color: white;
+}
+
+.subbox4{
+    background-color: aquamarine;
+    width:325px;
+    height:65px;
+    float:left;
+    text-align: center;
+    color: white;
+}
+
+.img{
+    display: none
+}
+
+span:hover + .img{
+    display:block;
+}
+
