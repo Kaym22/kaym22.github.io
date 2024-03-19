@@ -1,0 +1,19 @@
+.box1{
+    background-image: url(coffeemug.jpg);
+    color:rgb(26, 23, 23);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.box2{
+    width: 300px;
+    height: 360 px;
+    background-color: rgb(212, 180, 139);
+    border: 3px solid rgb(145, 7, 53);box-shadow: 3px 3px 3px palevioletred;
+    float: right;
+    margin: 1.5% 5% 5% 1.5%;
+    padding: 15px 12px; 
+}
+
