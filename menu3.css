@@ -10,8 +10,8 @@
 .box2{
     width: 300px;
     height: 430px;
-    background-color: rgb(168, 159, 159);
-    border: 3px solid rgb(145, 7, 53);box-shadow: 3px 3px 3px palevioletred;
+    background-color: white;
+    border: 3px solid rgb(199, 177, 219);box-shadow: 3px 3px 3px rgb(31, 127, 190);
     float: right;
     margin: 1.5% 5% 5% 1.5%;
     padding: 20px 15px; 
