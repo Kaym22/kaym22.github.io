@@ -1,11 +1,6 @@
-.largebox{
-    background-color: aquamarine;
-    height: 1000px; 
-}
-
 .subbox{
-    width:45%;
-    height:35%;
+    width:600px;
+    height:400px;
     background-color: white;
     border:5px double mediumspringgreen ;
     border-radius: 10px;
