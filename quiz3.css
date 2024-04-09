@@ -1,0 +1,62 @@
+.largebox{
+    background-color: aquamarine;
+    height: 1000px; 
+}
+
+.subbox{
+    width:45%;
+    height:35%;
+    background-color: white;
+    border:5px double mediumspringgreen ;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+.stage{
+    border: 3px solid mediumspringgreen;
+    border-radius: 25%;
+    height: 200px;
+    animation: slides 4s infinite;
+    background-size: 100% 100%;
+}
+
+@keyframes slides {
+    0%{background-image: url(parrot.jpg);}
+    45%{background-image: url(Toucan.jpg);}
+    65%{background-image: url(Budgerigar.jpg);}
+    100%{background-image: url(lovebirds.jpg);}
+}
+.btn1{
+    text-decoration: none;
+    border:3px solid plum;
+    padding:1% 2%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.mdlwindow{
+    opacity: 0;
+    background-color: rgba(69, 62, 68, 0.5);
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    pointer-events: none;
+}
+.mdlwindow div{
+    background-color: rgb(251, 251, 251);
+    width:80%;
+    margin: auto;
+    margin-top: 30%;
+    border-radius: 10px;
+    padding:3%;
+    text-align: center;
+ }
+ 
+ .mdlwindow:target{
+     opacity: 1;
+     pointer-events: all;
+ }
