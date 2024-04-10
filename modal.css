@@ -1,0 +1,53 @@
+body {background-image: url(animal.jpg);}
+.btn1{
+    text-decoration: none;
+    border:3px solid rgb(216, 125, 6);
+    padding:1% 2%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.mdlwindow{
+    opacity: 0;
+    background-color: rgba(69, 62, 68, 0.5);
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    pointer-events: none;
+}
+.mdlwindow div{
+    background-color: rgb(251, 251, 251);
+    width:80%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+    padding:3%;
+    text-align: center;
+ }
+ 
+ .mdlwindow:target{
+     opacity: 1;
+     pointer-events: all;
+ }
+ 
+ 
+ .subbox{
+    width:900px;
+    height: 475px;
+    border:20px double tan;
+    border-radius: 10px;
+    margin:auto;
+    text-align: center;
+
+}
+ 
+ .lrgbox div{
+     padding-bottom:3%;
+     text-align: center;
+     background-color: rgb(55, 126, 233);
+     border:3px solid orange;
+ 
+ }
+ 
