@@ -1,0 +1,85 @@
+body{background-image: url(NYC.jpg);}
+
+
+.clock{
+    height: 300px;
+    width: 200px;
+    position: relative; 
+}
+
+.clock>.hour{
+    height:20% ;
+    width: 5%;
+    position:absolute;
+    left: 71.78%;
+    top:47.9%;
+    margin: auto;
+   transform: rotate(45deg);
+    animation: rotatehour 20s infinite ;
+}
+    
+.clock>.min{
+    background-image: url(hand.jpg);
+    height: 25%;
+    width: 5%;
+    position:absolute;
+    right:24.4%;
+    bottom:24.4%;
+    transform: rotate(45deg);
+    animation: rotatemin 14s infinite; 
+}
+
+
+.clock>.hour,
+.clock>.min{
+    transform-origin: center;
+}
+
+@keyframes rotatehour {
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(45deg);}
+    30%{transform: rotate(90deg);}
+    40%{transform: rotate(135deg);}
+    50%{transform: rotate(180deg);}
+    60%{transform: rotate(225deg);}
+    80%{transform: rotate(270deg);}
+    90%{transform: rotate(315deg);}
+    100%{transform: rotate(360deg);}
+}
+
+
+@keyframes rotatemin {
+0%{transform: rotate(0deg);}
+20%{transform: rotate(45deg);}
+30%{transform: rotate(90deg);}
+40%{transform: rotate(135deg);}
+50%{transform: rotate(180deg);}
+60%{transform: rotate(225deg);}
+80%{transform: rotate(270deg);}
+90%{transform: rotate(315deg);}
+100%{transform: rotate(360deg);}
+}
+
+
+.graybox{
+    float: right;
+    bottom: 0;
+    right:0;
+    margin: 1%;
+    width: 200px;
+    height:150px;
+    background-color: rgba(122, 66, 66, 0.5);
+    border: 5px rgba(122, 66, 66, 0.5) solid;
+    text-align: center;
+}
+.box{
+
+    float: right;
+    margin: 1%;
+    height:200px;
+    width: 300px;
+    background-color: rgba(122, 66, 66, 0.5) ;
+    border: 5px rgba(122, 66, 66, 0.5) solid;
+    text-align: center;
+
+}
