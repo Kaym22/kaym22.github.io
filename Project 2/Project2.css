@@ -1,0 +1,201 @@
+body{
+    background-color:rgb(255, 147, 140,.5);
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 150px;
+    width: 400px;
+    padding: 4px;
+}
+
+.logo{
+    width: 25%;
+    height: 60%;
+    float:left;
+    animation: logoani 2s infinite;
+
+}
+
+@keyframes logoani {
+0%{transform: scale(0);}
+100%{transform: scale(1);}
+}
+
+.logo img{
+    width: 60%;
+    height: 150%;
+    border: 3px solid rgb(95, 8, 37);
+    border-radius: 10%;
+    
+}
+
+.title {
+    width: 66%;
+    height: 55%;
+    float: left;
+    font-style: italic;
+    font-family:'brush script' cursive;
+    font-size: x-large;
+    padding: 3px;
+    color: rgb(95, 8, 37);
+    animation: titlemove 6s infinite;
+    animation-delay: .5s;
+    
+}
+
+@keyframes titlemove {
+    0%{transform: translateY(-140px);}
+    50%{transform: translateY(75px);}
+    100%{transform: translateY(23px);}
+}
+
+.subtitle{
+    width: 66%;
+    height: 45%;
+    float: left;
+    animation: submove 6s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes submove {
+    0%{transform: translateY(100px);}
+    50%{transform: translateY(-130px);}
+    100%{transform: translateY(-14px);}
+}
+
+.slide {
+    height: 70px;
+    width: 1600px; 
+    margin: left;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .sb{
+    display: inline-block;
+    text-align: center;
+    animation: sliani 10s alternate-reverse infinite;
+    animation-delay: 1s;
+   
+  }
+  
+  .sb:first-child {
+    float: left;
+  }
+  
+  @keyframes sliani {
+    0%{transform: translateX(-200%);}
+    66%{transform: translateX(-100%);}
+    100%{transform: translateX(0);}
+  }
+  
+.btn1{
+    text-decoration: none;
+    border:3px solid rgb(245, 244, 244);
+    padding:1% 2%;
+    color: antiquewhite;
+    background-color:black;
+}
+
+.btn2{
+    text-decoration: none;
+    border:3px solid black;
+    padding:1% 2%;
+    color: black;
+    background-color:white;
+}
+
+.mdlwindow{
+    opacity: 0;
+    background-color:rgb(216, 112, 147, 0.5) ;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    pointer-events: none;
+    transition: opacity 2s ease;
+}
+
+.mdlwindow div{
+    background-color:rgb(255, 243, 243) ;
+    height: 300px;
+    width: 600px;
+    padding:3%;
+    margin:auto;
+    position: relative;
+ }
+ 
+ .mdlwindow:target{
+     opacity: 1;
+     pointer-events: all;
+ }
+
+ .close-btn {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000;
+    background-color: lightgrey;
+    text-decoration: none;
+}
+
+#modalToggle {
+    display: none;
+}
+
+ .box1{
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    font-size: large;
+    padding: 18px 15px; 
+}
+
+.subbox1{
+    width: 300px;
+    height: 360px;
+    float: left;
+    margin: 1% 6% 1% 6%;
+ 
+}
+
+.subbox2{
+    float: left;
+    margin: 1% 5% 1% 5%;
+    padding: 10px 50px 5px 60px;
+    color: antiquewhite;
+    text-align: center;
+    border: 2px solid peachpuff;
+}
+
+.mediumbox{
+    width:1600px;
+    height: 450px;
+}
+.largebox{
+    width: 1600px;
+    height:600px;
+    border:1px solid peachpuff;
+    background-color: bisque;
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
