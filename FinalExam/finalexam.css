@@ -28,6 +28,7 @@
     border-radius: 20px;
     float: right;
     margin-right: 20px;
+    margin-left: 20px;
     text-align: center;
   }
   .box{
@@ -57,4 +58,9 @@
     margin-top: 20px;
     margin-right: 20px;
     margin-left: 20px;
+  }
+box2{
+    width: 800px;
+    height:600px;
+    border: pink 3px solid;
   }
