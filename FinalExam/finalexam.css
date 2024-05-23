@@ -59,8 +59,30 @@
     margin-right: 20px;
     margin-left: 20px;
   }
-box2{
-    width: 800px;
-    height:600px;
+.box2{
+    width: 500px;
+    height:400px;
+    margin-left: 50px;
     border: pink 3px solid;
+    position: relative;
+  }
+
+  
+  .ball {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: moveBall 12s linear infinite;
+  }
+  
+  @keyframes moveBall {
+    0% {
+      bottom: 0;
+      left: 0;
+    }
+    100% {
+      top: 0;
+      right: 0;
+      transform: translate(700px, -600px);
+    }
   }
