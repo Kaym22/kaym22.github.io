@@ -65,19 +65,7 @@ document.querySelector('#addToCartFormpear').addEventListener('submit', function
     }
 });
 
-var calculateTotalButtons = document.querySelectorAll('.calculateTotal');
 
-calculateTotalButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        var parentBox = button.closest('.subbox');
-        var quantityInput = parentBox.querySelector('.quantityInput');
-        var priceElement = parentBox.querySelector('.price');
-        var pricePerItem = parseFloat(priceElement.textContent.replace('$', ''));
-        var quantity = parseInt(quantityInput.value);
-        var totalPrice = pricePerItem * quantity; 
-        alert(' Your total price is: $' + totalPrice.toFixed(2));
-    });
-});
 
 
 
