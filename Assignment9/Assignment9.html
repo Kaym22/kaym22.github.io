@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Assignment9</title>
+    <link rel="stylesheet" href="Assignment9.css">
+    
+</head>
+<Header>
+    <h1 style="color: aliceblue;padding:10px">All Products</h1>
+</Header>
+<hr style="border: 8px white double;">
+<nav style="text-align: left; padding: 10px 10px;">
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="typeDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: antiquewhite;">Type</button>
+        <div class="dropdown-menu" aria-labelledby="typeDropdown">
+            <a class="dropdown-item" href="#">Dresses</a>
+            <a class="dropdown-item" href="#">Shoes</a>
+            <a class="dropdown-item" href="#">Accessories</a>
+       </div> 
+        <a href="http://" target="_blank" rel="noopener noreferrer"><button class="btn" style="color: antiquewhite;">Size</button></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><button class="btn" style="color: antiquewhite;">Material</button></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><button class="btn" style="color: antiquewhite;">Gender</button></a>
+        <button class="btn dropdown-toggle" type="button" id="typeDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: antiquewhite;">Color</button>
+        <div class="dropdown-menu" aria-labelledby="typeDropdown">
+            <a class="dropdown-item" href="#">Blue</a>
+            <a class="dropdown-item" href="#">Pink</a>
+            <a class="dropdown-item" href="#">Red</a>
+            <a class="dropdown-item" href="#">Yellow</a>
+            <a class="dropdown-item" href="#">Purple</a>
+            <a class="dropdown-item" href="#">Orange</a>
+            <a class="dropdown-item" href="#">Green</a>
+       </div> 
+        <a href="http://" target="_blank" rel="noopener noreferrer"><button class="btn" style="color: antiquewhite;">Category</button></a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><button class="btn" style="color: antiquewhite;">Brand</button></a>
+    </div> 
+   
+</nav> 
+<hr style="border: 8px white double;">
+<br>
+<body>
+    <body>
+   
+        <div class="row">
+            <div class="col-sm-4 subbox" >
+              <div>
+                  <img src="Blk dress.jpeg" width="70%" height="80%" data-bs-toggle="modal" data-bs-target="#grape" alt="">
+              </div>
+              <h2>Simple Black Dress</h2>
+              <p>Clothing</p>
+              <P class="price">$12</P>
+              Qty: <input type="number" class="quantityInput" min="1" value="1">
+              <button  class="calculateTotal">Total</button>
+            </div>
+    
+            <div class="col-sm-4 subbox" > 
+                <img src="Silver Earrings.jpg" width="70%" height="75.5%" data-bs-toggle="modal" data-bs-target="#pear" >
+                <h2>Silver Hoops</h2>
+                <p>Accessories</p>
+                <P class="price">$25</P>
+                Qty: <input type="number" class="quantityInput" min="1" value="1">
+                <button class="calculateTotal">Total</button>
+            </div>
+    
+            <div class="col-sm-4 subbox " > 
+              <img src="Blue dress.jpeg" width="68%" height="75.5%" data-bs-toggle="modal" data-bs-target="#apple" >
+              <h2>Textured Dress</h2>
+              <p>Clothing</p>
+              <P class="price">$20</P>
+              Qty: <input type="number" class="quantityInput" min="1" value="1">
+              <button class="calculateTotal">Total</button>
+            </div>
+        </div> 
+    <br>
+        <hr style="border: 8px white double;">
+        <div class="modal"  id="grape">
+         
+            <div class="modal-dialog" >
+                <button class="close-btn">X</button>
+                <div class="modal-content text-center img img-cent" style="padding: 20px 30px;">
+                    <div>
+                        <img src="Blk dress.jpeg" title="Black" id="mainImage"  width="60% height=30%">
+                    </div>
+                    <div class="small-images">
+                        <img src="Org dress.jpeg" title="Orange" class="small-image" width="10%" height="10%" onclick="changeMainImage(this)">
+                        <img src="Tan dress.jpeg" title="Tan" class="small-image" width="10%" height="10%" onclick="changeMainImage(this)">
+                    </div>
+                    <hr style="border: 3px rgb(128, 163, 187) double;">
+                    <h3>Simple Black Dress</h3>
+                    <ul>
+                      <li>Sleeveless Midi Dress</li>
+                      <li>Made with 50% Cotton, 45% Polyester, 5% Spandex</li>
+                      <li>Cute casual everyday dress for women and teens.</li>
+                      <li>Available in 3 colors.</li>
+                      <li>$12</li>
+                    </ul>
+                    <form id="addToCartForm">
+                      Qty: <input type="number" id="quantityInput" min="1" required> <button id="addToCartButton" type="submit" style="background-color:rgb(128, 163, 187);">Add to Cart</button>
+                    </form>
+                    <hr style="border: 3px rgb(128, 163, 187) double;"> 
+                </div>
+            </div>
+        </div>
+        <div class="modal"  id="apple">
+     
+            <div class="modal-dialog">
+                <button class="close-btn">X</button>
+                <div class="modal-content text-center img img-cent" style="padding: 20px 30px;">
+                    <div>
+                        <img src="Blue dress.jpeg" title="Blue" id="mainImage1" width="60% height=30%">
+                    </div>
+                    <div class="small-images1">
+                        <img src="Green dress.jpeg" width="10%" height="10%" title="Green" class="small-image1" onclick="changeMainImage1(this)">
+                    </div>
+                    <hr style="border: 3px rgb(128, 163, 187) double;">
+                    <h3>Textured Dress</h3>
+                    <ul>
+                      <li>Short Sleeve Textured Dress.</li>
+                      <li>Made with 85% Polyester, 10% Rayon, 5% Spandex.</li>
+                      <li>Look great when you step out the house.</li>
+                      <li>Available in 2 colors.</li>
+                      <li>$20</li>
+                    </ul>
+                    <form id="addToCartFormapple">
+                        Qty: <input type="number" id="quantityInput1" min="1" required> <button id="addToCartButton1" type="submit" style="background-color:rgb(128, 163, 187);">Add to Cart</button>
+                      </form>
+                      <hr style="border: 3px rgb(128, 163, 187) double;">
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal"  id="pear">
+         
+            <div class="modal-dialog" >
+                <button class="close-btn">X</button>
+                <div class="modal-content text-center img img-cent" style="padding: 20px 30px;">
+                    <div>
+                        <img src="Silver Earrings.jpg" title="Silver Earrings"  width="60% height=30%">
+                    </div>
+                    <hr style="border: 3px rgb(128, 163, 187) double;">
+                    <h3>Silver Earrings</h3>
+                    <ul>
+                      <li>Everyday Silver Earrings</li>
+                      <li>18 inches round</li>
+                      <li>Silver coated and long lasting.</li>
+                      <li>Look cute for less.</li>
+                      <li>$25</li>
+                    </ul>
+                    <form id="addToCartFormpear">
+                      Qty: <input type="number" id="quantityInput2" min="1" required> <button id="addToCartButton2" type="submit" style="background-color:rgb(128, 163, 187);">Add to Cart</button>
+                    </form>
+                    <hr style="border: 3px rgb(128, 163, 187) double;"> 
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Assignment9.js"></script>
+</body>
+</html>
