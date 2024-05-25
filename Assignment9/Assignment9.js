@@ -53,17 +53,19 @@ var calculateTotalButtons = document.querySelectorAll('.calculateTotal');
 
 calculateTotalButtons.forEach(function(button) {
     button.addEventListener('click', function() {
-    
-        var parentBox = button.closest('.subbox');
+        var total = 0; 
         
-        var quantityInput = parentBox.querySelector('.quantityInput');
-        var priceElement = parentBox.querySelector('.price');
+        document.querySelectorAll('.subbox').forEach(function(parentBox) {
+            var quantityInput = parentBox.querySelector('.quantityInput');
+            var priceElement = parentBox.querySelector('.price');
+            
+            var pricePerItem = parseFloat(priceElement.textContent.replace('$', ''));
+            var quantity = parseInt(quantityInput.value);
+            
+            var totalPrice = pricePerItem * quantity;
+            total += totalPrice; 
+        });
         
-        var pricePerItem = parseFloat(priceElement.textContent.replace('$', ''));
-        var quantity = parseInt(quantityInput.value);
-        
-        var totalPrice = pricePerItem * quantity;
-        
-        alert('Total price is: $' + totalPrice.toFixed(2));
+        alert('Total price for all selected products is: $' + total.toFixed(2));
     });
 });
